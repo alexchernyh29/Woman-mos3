@@ -1,0 +1,18 @@
+mixin result()
+
+    +b('section').result
+        +e.wrap
+            +e.images
+                +e.logo-img(href='https://www.woman.ru/')
+                    img(src=`/images/logo.svg`)
+                +e.img
+            +e.content
+                +e('p').title Ваш результат:
+                +e('h3').answer 
+                +e('p').text
+                +e.actions
+                    +e('button').btn Пройти еще раз
+            +e.sharing
+                +sharing()
+            +e('a').arrow(href='#section4')
+                    img(src='/images/arrow.svg') 

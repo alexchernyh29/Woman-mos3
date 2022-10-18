@@ -1,0 +1,149 @@
+.promo
+    position relative
+    background-color $c-white
+    height 100vh
+    width auto
+    overflow hidden
+    +below(768px)
+        background-color #fff
+
+    &__wrap
+        position relative
+        display flex
+        flex-flow column
+        justify-content center
+        align-items center
+        padding w(100) w(260) w(50)
+        +below(768px)
+            padding wm(140) wm(40) wm(0)
+
+    &__content
+        display flex
+        flex-flow column
+        justify-content center
+        align-items center
+
+    &__title
+        position relative
+        z-index 2
+        font-family $ff-pt
+        font-weight bold
+        font-size w(66)
+        line-height w(87)
+        text-align center
+        letter-spacing 0.05em
+        color $c-brown
+
+        +below(768px)
+            font-size wm(66)
+            line-height wm(87)
+            padding-top wm(45)
+
+    &__title_info
+        position relative
+        z-index 2
+        padding-top w(5)
+        font-family $ff-pt
+        font-weight normal
+        font-size w(42)
+        line-height w(48)
+        text-align center
+        letter-spacing 0.05em
+
+        +below(768px)
+            font-size wm(42)
+            line-height wm(48)
+
+    &__text
+        position relative
+        z-index 2
+        padding-top w(60)
+        font-family $ff-pt
+        width w(700)
+        font-size w(24)
+        line-height w(28)
+        text-align center
+        letter-spacing 0.05em
+        color $c-brown
+        +below(768px)
+            font-size 3.5vw
+            line-height 4vw
+            width wm(620)
+            padding-top wm(20)
+
+    &__sharing
+        position absolute
+        right w(25)
+        bottom w(30)
+
+        +below(768px)
+            bottom wm(30) 
+            right wm(15)
+
+    &__arrow
+        position relative
+        z-index 1
+        width w(48)
+        height w(48)
+        margin-top w(20)
+        color $c-brown
+        justify-content center
+        animation MoveUpDown 1.5s linear infinite
+
+        +below(768px)
+            margin-top wm(20)
+            width wm(48)
+            height wm(48)
+
+    &__logo-img
+        position absolute
+        top w(35)
+        left w(50)
+
+        img
+            width w(265)
+
+        +below(768px)
+            padding-left wm(270)
+            padding-top wm(35)
+
+            img
+                width wm(265)
+
+    &__top-img
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        z-index 0
+        overflow hidden
+        img
+            width 100%
+            &:last-child
+                display none
+            +below(768px)
+                &:first-child
+                    display none
+                &:last-child
+                    display block
+    
+    &__bottom-img
+        position absolute
+        bottom 0
+        left 0
+        width 100%
+        height 100%
+        z-index 0
+        overflow hidden
+        img
+            width 100%
+            &:last-child
+                display none
+            +below(768px)
+                position absolute
+                bottom 0
+                &:first-child
+                    display none
+                &:last-child
+                    display block

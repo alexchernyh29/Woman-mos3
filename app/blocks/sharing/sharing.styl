@@ -1,0 +1,56 @@
+.sharing
+    position relative
+
+    &__list
+        display flex
+        flex-flow column
+
+    &__item
+        margin-top w(10)
+        position relative
+        width w(50) 
+        height w(50)
+        background $c-brown
+        border-radius 50%
+        transition opacity .3s
+        +below(768px)
+            width wm(50)
+            height wm(50)
+            margin-left w(10)
+
+        &:hover
+            opacity .7
+    
+        &:last-child
+            margin-right 0
+
+    &__link
+        display inline-block
+        height 100%
+        width 100%
+        border-radius 50%
+
+    &__icon
+        position absolute
+        top: 50%
+        left: 50%
+        transform translate(-50%,-50%)
+
+        &_fb
+            width w(10)
+            +below(768px)
+                width wm(10)
+        &_vk
+            width w(13)
+            +below(768px)
+                width wm(13)
+        
+        &_tw
+            width w(17)
+            +below(768px)
+                width wm(17)
+
+        &_od
+            width w(11)
+            +below(768px)
+                width wm(11)

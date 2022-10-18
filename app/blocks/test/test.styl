@@ -1,0 +1,144 @@
+.test
+    position relative
+    height 100vh
+    background #FFF6F1
+    width auto
+    padding w(40) w(150) w(40) w(770)
+
+    +below(768px)
+        height auto
+        min-height 100vh
+        padding wm(100) wm(20) wm(40)
+        background #FFFFFF
+
+    &__number
+        position absolute
+        width w(170)
+        height w(275)
+        left w(1705)
+        top  w(45)
+
+        +below(768px)
+            left wm(55)
+            top  wm(40)
+            width wm(120)
+        
+        img
+            width 100%
+            
+
+    &__logo
+        position absolute
+        left w(80)
+        top w(35)
+
+        +below(768px)
+            display none
+
+
+    &__picture
+        position absolute
+        width w(725)
+        top w(600)
+        left w(20)
+        transform translateY(-50%)
+        +below(768px)
+            top wm(320)
+            left wm(235)
+            width wm(503)
+            height wm(539)
+
+        img
+            width 100%
+
+    &__wrap
+        position relative
+        +below(768px)
+            margin-top wm(520)
+        
+
+    &__title
+        font-family PT Serif
+        font-weight 700
+        font-size w(62)
+        line-height w(82)
+        margin-bottom w(80)
+        letter-spacing 0.05em
+        color #915B65
+        +below(768px)
+            margin 0 0 wm(20)
+            text-align center
+            width 100%
+            font-size 6vw
+            line-height 1
+
+    &__list
+        font-family PT Serif
+        font-weight 400
+        font-size w(30)
+        line-height w(30)
+        letter-spacing 0.05em
+        color #915B65
+        +below(768px)
+            width wm(760)
+            margin-left w(40)
+            font-size wm(21)
+            line-height wm(23)
+
+    &__item
+        position relative
+        padding-left w(80)
+        margin-bottom w(35)
+        cursor pointer
+        &:last-child
+            margin-bottom 0
+        &:hover
+            .test__check
+                opacity 1
+                +below(768px)
+                    opacity 0
+            .test__answer-text
+                font-weight bold
+                +below(768px)
+                    font-weight normal
+        +below(768px)
+            font-size 1.5em
+            line-height 1
+            margin-bottom wm(15)
+            line-height 1
+    
+    &__check
+        position absolute
+        top 50%
+        left w(8)
+        transform translateY(-50%)
+        width w(25)
+        height w(25)
+        opacity 0
+        transition opacity .3s
+        +below(768px)
+            width wm(12)
+            height w(12)
+            left wm(4)
+    
+    &__sign
+        position absolute
+        top 50%
+        left 0
+        transform translateY(-50%)
+        width w(40)
+        height w(40)
+        +below(768px)
+            top wm(10)
+            width wm(25)
+            height wm(25)
+
+        img
+            width 100%
+
+
+    
+    
+
+  
+

@@ -1,0 +1,30 @@
+import('sprites/*')
+import('helpers/svg-size')
+@import 'helpers/variables'
+@import 'helpers/mixins'
+@import 'helpers/fonts'
+@import 'helpers/optimize'
+
+import('../blocks/**/*')
+
+body
+    font-family 'PTSerif', sans-serif
+    #result,
+    #footer
+        display none
+    
+    &.show-test .test
+        display block
+
+    &.show-result
+        #result,
+        #footer
+            display block
+
+@keyframes MoveUpDown
+  0%, 100%
+    transform: translateY(0);
+  
+  50%
+    transform: translateY(-20px);
+  

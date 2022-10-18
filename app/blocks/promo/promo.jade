@@ -1,0 +1,20 @@
+mixin promo()
+
+    +b('section').promo
+        +e.top-img.fadeInRight.wow(data-wow-duration="1s")
+            img(src=`/images/promo-top-img.jpg`)
+            img(src=`/images/promo-top-img-mob.jpg`)
+        +e.bottom-img.fadeInLeft.wow(data-wow-duration="1s")
+            img(src=`/images/promo-bottom-img.png`)
+            img(src=`/images/promo-bottom-img-mob.png`)
+        +e.wrap
+            +e.content
+                +e.logo-img.fadeInLeft.wow(data-wow-duration="1s" href='https://www.woman.ru/')
+                    img(src=`/images/logo.svg`)
+                +e('h3').title.fadeInLeft.wow(data-wow-duration="1s") СТАРТ СЕМЕЙНОЙ ЖИЗНИ:
+                +e('h4').title_info.fadeInRight.wow(data-wow-duration="1s") свадебная география для вашей<br>идеальной регистрации
+                +e('p').text.fadeInUp.wow(data-wow-duration="1s") Готовы&nbsp;ли вы&nbsp;взять его в&nbsp;законные мужья? Подождите говорить долгожданное &laquo;да&raquo;, ведь важно определиться с&nbsp;местом. Регистрация брака должна запомниться надолго и&nbsp;принести массу впечатлений.Одни из&nbsp;главных составляющих&nbsp;&mdash; место и&nbsp;атмосфера.Где&nbsp;же провести церемонию? Вариантов множество&nbsp;&mdash; от&nbsp;центра &laquo;Мои Документы&raquo;, Дворцов бракосочетания до&nbsp;небоскребов и&nbsp;стадионов.<br><br> Пройдите тест и&nbsp;выберите подходящее именно вам место для заключения брака!
+                +e.arrow(href="#section2")
+                    +promo-arrow
+        +e.sharing
+            +sharing()

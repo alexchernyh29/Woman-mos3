@@ -1,0 +1,100 @@
+.footer
+    position relative
+    height 100vh
+    background #FFF6F1
+    width auto
+    +below(768px)
+        height 100vh
+        background #FFFFFF
+
+    &__logo
+        position absolute
+        margin-left w(80)
+        margin-top w(35)
+        +below(768px)
+            display none
+
+        img
+            width w(265)
+
+    &__content
+        position relative
+        margin w(-655) w(55) w(0) w(970)
+        color   #915B65
+        +below(768px)
+            margin w(60) w(20) w(0) w(20)
+
+    &__picture
+        padding-left w(45)
+        padding-top w(140)
+        +below(768px)
+            margin-top w(15)
+
+        img
+            width w(911)
+            +below(768px)
+                width 100%
+
+    &__text
+        margin-top w(20)
+        margin-left w(30)
+        font-size w(24)
+        line-height w(28)
+        color #915B65
+        +below(768px)
+            margin-top wm(25)
+            font-size wm(24)
+            line-height wm(28)
+
+    &__heading
+        padding-left w(30)
+        font-family $ff-pt
+        font-weight bold
+        font-size w(62)
+        line-height w(64)
+        letter-spacing 0.05em
+        +below(768px)
+            margin-top wm(10)
+            text-align center
+            font-size wm(62)
+            line-height wm(64)
+            padding-bottom wm(15)
+
+
+    &__below
+        text-align center
+    
+    &__addition
+        position relative
+        font-family $ff-pt
+        font-size w(28)
+        line-height w(32)
+        letter-spacing 0.05em
+        padding-top w(35)
+        padding-left w(30)
+        color #915B65
+        +below(768px)
+            padding-top wm(35)
+            font-size wm(28)
+            line-height wm(32)
+            text-align center
+
+
+    &__signature
+        position relative
+        margin-right w(880)
+        margin-top w(-30)
+        font-family $ff-pt
+        text-decoration underline
+        font-size w(22)
+        line-height w(32)
+        text-align center
+        letter-spacing 0.05em
+        a
+            color #915B65
+        +below(768px)
+            position absolute
+            width 100%
+            margin-top wm(54)
+            font-size wm(22)
+            line-height wm(32)
